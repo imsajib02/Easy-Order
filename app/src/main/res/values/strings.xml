@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Easy Order</string>
+    <string name="des">We provide our customers with the facility to order their foods
+                        without going through the hassale of calling the waiter. This app
+                        helps you to select and order your food without waiting for the
+                        waiter to come.</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.res.easyorder.MenuActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/breakfast" />
+
+            <ImageButton
+                android:id="@+id/lunch"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/lunch" />
+
+            <ImageButton
+                android:id="@+id/dinner"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/dinner" />
+
+            <ImageButton
+                android:id="@+id/setmenu"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/set_menu" />
+
+            <ImageButton
+                android:id="@+id/drink"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:srcCompat="@drawable/drinks" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
