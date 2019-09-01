@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -142,6 +143,7 @@ public class MenuActivity extends AppCompatActivity {
 
                 firebaseAuth.signOut();
                 finish();
+                Toast.makeText(this, "Logged out.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MenuActivity.this,LoginActivity.class);
                 startActivity(intent);
 
@@ -162,6 +164,7 @@ public class MenuActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finish();
                         firebaseAuth.signOut();
+                        Toast.makeText(MenuActivity.this, "Logged out.", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MenuActivity.this,LoginActivity.class);
                         startActivity(intent);
                     }

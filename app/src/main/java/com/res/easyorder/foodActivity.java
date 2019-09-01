@@ -170,6 +170,7 @@ public class foodActivity extends AppCompatActivity {
 
                 firebaseAuth.signOut();
                 finish();
+                Toast.makeText(this, "Logged out.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(foodActivity.this,LoginActivity.class);
                 startActivity(intent);
 

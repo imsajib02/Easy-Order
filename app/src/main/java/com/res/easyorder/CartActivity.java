@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -114,6 +115,7 @@ public class CartActivity extends AppCompatActivity {
 
                 firebaseAuth.signOut();
                 finish();
+                Toast.makeText(this, "Logged out.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(CartActivity.this,LoginActivity.class);
                 startActivity(intent);
 
