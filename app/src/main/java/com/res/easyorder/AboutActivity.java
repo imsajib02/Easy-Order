@@ -23,7 +23,7 @@ public class AboutActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/sajib.noodles"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/imsajib02"));
                 startActivity(browserIntent);
             }
         });
