@@ -8,32 +8,68 @@
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="400dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="82dp"
-        android:text="Select your table"
-        android:gravity="center"
-        android:textSize="12pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_82sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Contact:"
+        android:gravity="center|right"
+        android:textSize="@dimen/_12sdp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="200dp"
-        android:layout_height="35dp"
-        android:layout_below="@+id/text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignTop="@+id/text"
+        android:layout_toEndOf="@+id/text"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:inputType="phone"
+        android:text=" +880" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Address:"
+        android:gravity="center|right"
+        android:textSize="@dimen/_12sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:ems="10"
+        android:inputType="textMultiLine|text"
+        android:lines="5"
+        android:minLines="3"
+        android:gravity="top|left"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical" />
 
     <Button
         android:id="@+id/confirm"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner"
+        android:layout_below="@+id/address"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp"
-        android:padding="10dp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:padding="@dimen/_10sdp"
         android:text="Confirm"
         android:textColor="#ffffff" />
+
 
 </RelativeLayout>

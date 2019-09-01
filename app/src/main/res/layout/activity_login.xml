@@ -10,25 +10,25 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:orientation="vertical"
-        android:layout_width="250dp"
+        android:layout_width="@dimen/_240sdp"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout">
     </LinearLayout>
 
     <EditText
         android:id="@+id/gmail"
-        android:layout_width="250dp"
+        android:layout_width="@dimen/_240sdp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="69dp"
+        android:layout_marginBottom="@dimen/_60sdp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Gmail" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="250dp"
+        android:layout_width="@dimen/_240sdp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout"
         android:layout_alignEnd="@+id/gmail"
@@ -39,11 +39,11 @@
     <Button
         android:id="@+id/login"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="250dp"
+        android:layout_width="@dimen/_240sdp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:text="Login"
         android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 

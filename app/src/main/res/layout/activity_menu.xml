@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.res.easyorder.MenuActivity">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -21,32 +20,35 @@
             <ImageButton
                 android:id="@+id/breakfast"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="@dimen/_130sdp"
                 app:srcCompat="@drawable/breakfast" />
 
             <ImageButton
                 android:id="@+id/lunch"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="@dimen/_130sdp"
                 app:srcCompat="@drawable/lunch" />
 
             <ImageButton
                 android:id="@+id/dinner"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="@dimen/_130sdp"
                 app:srcCompat="@drawable/dinner" />
 
             <ImageButton
                 android:id="@+id/setmenu"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="@dimen/_130sdp"
                 app:srcCompat="@drawable/set_menu" />
 
             <ImageButton
                 android:id="@+id/drink"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="@dimen/_130sdp"
                 app:srcCompat="@drawable/drinks" />
+
         </LinearLayout>
+
     </ScrollView>
+
 </RelativeLayout>

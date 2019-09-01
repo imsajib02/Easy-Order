@@ -54,13 +54,12 @@ public class CartActivity extends AppCompatActivity {
 
         length = namelist.size();
 
-        for (i=0; i<length; i++)
-        {
+        for (i = 0; i < length; i++) {
             name = namelist.get(i);
             quantity = qntylist.get(i);
             price = pricelist.get(i);
 
-            orderlist.add(new cartitem(name,quantity,price));
+            orderlist.add(new cartitem(name, quantity, price));
         }
 
         CartAdapter cartAdapter = new CartAdapter(this,R.layout.cart_view_layout,orderlist);
@@ -73,16 +72,23 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(CartActivity.this, OrderActivity.class);
-                Bundle b = new Bundle();
+                if(orderlist.isEmpty())
+                {
+                    //do nothing
+                }
+                else {
+                    Intent intent = new Intent(CartActivity.this, OrderActivity.class);
+                    Bundle b = new Bundle();
 
-                b.putStringArrayList("name", namelist);
-                b.putIntegerArrayList("quantity", qntylist);
-                b.putIntegerArrayList("price", pricelist);
-                b.putInt("total", total_ammount);
+                    b.putStringArrayList("name", namelist);
+                    b.putIntegerArrayList("quantity", qntylist);
+                    b.putIntegerArrayList("price", pricelist);
+                    b.putInt("total", total_ammount);
 
-                intent.putExtras(b);
-                startActivity(intent);
+                    intent.putExtras(b);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
     }
@@ -106,34 +112,20 @@ public class CartActivity extends AppCompatActivity {
 
             case R.id.logout:
 
-                progressDialog.setMessage("Signing out..");
-                progressDialog.show();
-
-                new CountDownTimer(5000, 1000) {
-                    public void onFinish() {
-
-                        progressDialog.dismiss();
-                        foodActivity f1 = new foodActivity();
-                        f1.fname.clear();
-                        f1.fqnty.clear();
-                        f1.fprice.clear();
-                        f1.total_ammount = 0;
-
-                        firebaseAuth.signOut();
-                        finish();
-                        Intent intent = new Intent(CartActivity.this,LoginActivity.class);
-                        startActivity(intent);
-                    }
-
-                    public void onTick(long millisUntilFinished) {
-                        // millisUntilFinished    The amount of time until finished.
-                    }
-                }.start();
+                firebaseAuth.signOut();
+                finish();
+                Intent intent = new Intent(CartActivity.this,LoginActivity.class);
+                startActivity(intent);
 
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void onBackPressed(){
+
+        finish();
     }
 }

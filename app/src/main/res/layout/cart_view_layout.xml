@@ -10,16 +10,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp"
         android:text="name" />
 
     <TextView
         android:id="@+id/quantityoffood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_25sdp"
         android:text="quantity" />
 
     <TextView
@@ -28,17 +28,18 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/quantityoffood"
         android:layout_alignBottom="@+id/quantityoffood"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="@dimen/_100sdp"
         android:layout_toStartOf="@+id/delete"
         android:text="price" />
 
     <Button
         android:id="@+id/delete"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_40sdp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="@dimen/_5sdp"
         android:text="Del" />
+
 </RelativeLayout>

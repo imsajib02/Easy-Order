@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/foodpic"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:padding="10dp"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:padding="@dimen/_8sdp"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/foodpic"
-        android:padding="10dp"
+        android:padding="@dimen/_8sdp"
         android:text="name" />
 
     <TextView
@@ -28,23 +28,23 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="16dp"
-        android:padding="10dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
         android:text="price" />
 
     <Button
         android:id="@+id/minus"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_below="@+id/foodname"
         android:layout_toEndOf="@+id/foodpic"
         android:text="-"
-        android:textSize="12sp" />
+        android:textSize="@dimen/_12sdp" />
 
     <EditText
         android:id="@+id/quantity"
-        android:layout_width="25dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_25sdp"
         android:layout_below="@+id/foodname"
         android:layout_toEndOf="@+id/minus"
         android:ems="10"
@@ -55,17 +55,17 @@
 
     <Button
         android:id="@+id/plus"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_alignTop="@+id/quantity"
         android:layout_toEndOf="@+id/quantity"
         android:text="+"
-        android:textSize="12sp" />
+        android:textSize="@dimen/_12sdp" />
 
     <Button
         android:id="@+id/addtocart"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_alignBaseline="@+id/quantity"
         android:layout_alignBottom="@+id/quantity"
         android:layout_alignEnd="@+id/foodprice"

@@ -127,7 +127,7 @@ public class foodActivity extends AppCompatActivity {
             foodlist.add(new item("Borhani",R.drawable.borhani,40,"0"));
             foodlist.add(new item("Milkshake",R.drawable.milkshake,80,"0"));
             foodlist.add(new item("Mango Juice",R.drawable.mango_juice,70,"0"));
-            foodlist.add(new item("Orange Juice",R.drawable.chicken_burger,70,"0"));
+            foodlist.add(new item("Orange Juice",R.drawable.orange_juice,70,"0"));
             foodlist.add(new item("Lemonade",R.drawable.lemonade,30,"0"));
             foodlist.add(new item("Coke",R.drawable.coke,30,"0"));
             foodlist.add(new item("Fanta",R.drawable.fanta,30,"0"));
@@ -168,29 +168,10 @@ public class foodActivity extends AppCompatActivity {
 
             case R.id.logout:
 
-                progressDialog.setMessage("Signing out..");
-                progressDialog.show();
-
-                new CountDownTimer(5000, 1000) {
-                    public void onFinish() {
-
-                        progressDialog.dismiss();
-                        foodActivity f1 = new foodActivity();
-                        f1.fname.clear();
-                        f1.fqnty.clear();
-                        f1.fprice.clear();
-                        f1.total_ammount = 0;
-
-                        firebaseAuth.signOut();
-                        finish();
-                        Intent intent = new Intent(foodActivity.this,LoginActivity.class);
-                        startActivity(intent);
-                    }
-
-                    public void onTick(long millisUntilFinished) {
-                        // millisUntilFinished    The amount of time until finished.
-                    }
-                }.start();
+                firebaseAuth.signOut();
+                finish();
+                Intent intent = new Intent(foodActivity.this,LoginActivity.class);
+                startActivity(intent);
 
                 return true;
 

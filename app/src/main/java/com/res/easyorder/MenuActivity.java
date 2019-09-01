@@ -140,29 +140,10 @@ public class MenuActivity extends AppCompatActivity {
 
             case R.id.logout:
 
-                progressDialog.setMessage("Signing out..");
-                progressDialog.show();
-
-                new CountDownTimer(5000, 1000) {
-                    public void onFinish() {
-
-                        progressDialog.dismiss();
-                        foodActivity f1 = new foodActivity();
-                        f1.fname.clear();
-                        f1.fqnty.clear();
-                        f1.fprice.clear();
-                        f1.total_ammount = 0;
-
-                        firebaseAuth.signOut();
-                        finish();
-                        Intent intent = new Intent(MenuActivity.this,LoginActivity.class);
-                        startActivity(intent);
-                    }
-
-                    public void onTick(long millisUntilFinished) {
-                        // millisUntilFinished    The amount of time until finished.
-                    }
-                }.start();
+                firebaseAuth.signOut();
+                finish();
+                Intent intent = new Intent(MenuActivity.this,LoginActivity.class);
+                startActivity(intent);
 
                 return true;
 
@@ -180,6 +161,7 @@ public class MenuActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         finish();
+                        firebaseAuth.signOut();
                         Intent intent = new Intent(MenuActivity.this,LoginActivity.class);
                         startActivity(intent);
                     }
