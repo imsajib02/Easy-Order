@@ -1,2 +1,2 @@
-# Easy-Order - Login with your email address, select a food category, select your food, insert quantity, add to cart, check your cart, put your address and phone number, place your order and you are done.
+# EasyOrder - Login with your email address, select a food category, select your food, insert quantity, add to cart, check your cart, put your address and phone number, place your order and you are done.
 This is a conceptual appliccation for food ordering. It does not have all necessary functions but enough to show how it will operate. It can be categorized as a 'General' application. Not intended for a specific company or restaurent. It can be used for any food company or restaurent by modifying with their requirements.
