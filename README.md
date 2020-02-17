@@ -14,4 +14,5 @@ A conceptual food ordering application. Developed this for my own development pr
 |   |   |   |   |
 |-----|-----|-----|-----|
 |![](/Snapshots/Screenshot_2019-09-02-15-16-51-591_com.res.easyorder.png) | ![](/Snapshots/Screenshot_2019-09-02-15-16-58-374_com.res.easyorder.png) | ![](/Snapshots/Screenshot_2019-09-02-15-17-02-965_com.res.easyorder.png) | ![](/Snapshots/Screenshot_2019-09-02-15-17-42-671_com.res.easyorder.png) |
-|![](/Snapshots/Screenshot_2019-09-02-15-18-16-871_com.res.easyorder.png)|
+|![](/Snapshots/Screenshot_2019-09-02-15-18-16-871_com.res.easyorder.png)|![](/Snapshots/Screenshot_2019-09-02-15-18-29-209_com.res.easyorder.png)|![](/Snapshots/Screenshot_2019-09-02-15-18-48-614_com.res.easyorder.png)|![](/Snapshots/Screenshot_2019-09-02-15-18-59-455_com.res.easyorder.png)|
+|![](/Snapshots/Screenshot_2019-09-02-15-19-48-354_com.res.easyorder.png)|
