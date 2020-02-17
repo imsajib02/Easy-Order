@@ -11,5 +11,6 @@ A conceptual food ordering application. Developed this for my own development pr
 * **Place order with phone number and address**
 
 ## Screenshots:
+|   Hen   |   ten   |
 :--------------------------------:|:---------------------------------:
 ![s1](/Snapshots/Screenshot_2019-09-02-15-16-51-591_com.res.easyorder.png) | ![s2](/Snapshots/Screenshot_2019-09-02-15-16-58-374_com.res.easyorder.png)
