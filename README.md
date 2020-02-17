@@ -6,6 +6,10 @@ A conceptual food ordering application. Developed this for my own development pr
 * **Browse foods categorywise**
 * **Food items with name, photo and price**
 * **Set quantity and add to cart**
-* **Browse cart**
-* **Remove from cart**
-* **Put your phone number, address and place order**
+* **Browse cart items**
+* **Remove items from cart**
+* **Place order with phone number and address**
+
+## Screenshots:
+|-----|-----|-----|-----|-----|
+|![s1](/Snapshots/Screenshot_2019-09-02-15-16-51-591_com.res.easyorder.png)|![s2](/Snapshots/Screenshot_2019-09-02-15-16-58-374_com.res.easyorder.png)|![s3](/Snapshots/Screenshot_2019-09-02-15-17-02-965_com.res.easyorder.png)|![s4](/Snapshots/Screenshot_2019-09-02-15-17-42-671_com.res.easyorder.png)|![s5](/Snapshots/Screenshot_2019-09-02-15-18-16-871_com.res.easyorder.png)|
